@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Кешбэк и страховки ставок — FinSearch</title>
+<meta name="description" content="Акции букмекеров с возвратом части проигрыша: кешбэк, страховки экспрессов и ставок.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&family=JetBrains+Mono&family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-kind="cashback">
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="index.html">Fin<span>Search</span></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="fribety.html" aria-current="page">Бонусы</a>
+      <a href="prognozy.html">Прогнозы</a>
+      <a href="novosti.html">Новости</a>
+      <a href="bukmekery.html">Букмекеры</a>
+      <a href="sport.html">Ставки на спорт</a>
+      <a href="stati.html">Статьи</a>
+    </nav>
+    <span class="age" title="Только для совершеннолетних">18+</span>
+  </div>
+</header>
+
+<main>
+  <div class="page-head">
+    <div class="wrap">
+      <p class="crumbs"><a href="index.html">FinSearch</a> / <a href="fribety.html">Бонусы</a> / Кешбэк и страховки</p>
+      <h1>Кешбэк и страховки ставок</h1>
+      <p class="sub">Обновлено <b id="updated"></b> · сейчас действует <b id="total"></b></p>
+      <div class="search" role="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+        <label for="q" class="sr">Поиск акций</label>
+        <input id="q" type="search" placeholder="Winline, без депозита, экспресс…" autocomplete="off">
+      </div>
+    </div>
+  </div>
+
+  <div class="filters">
+    <div class="wrap">
+      <div class="tabs" id="tabs" role="group" aria-label="Для кого"></div>
+      <div class="chips" id="chips" role="group" aria-label="Букмекер"></div>
+      <label class="sort">Сортировка
+        <select id="sort">
+          <option value="new">Сначала новые</option>
+          <option value="amount">По сумме</option>
+          <option value="soon">Скоро закончатся</option>
+        </select>
+      </label>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="promos" id="promos" aria-live="polite"></div>
+  </div>
+
+  <section class="block">
+    <div class="wrap">
+      <h2>Другие подборки</h2>
+      <nav class="sets" aria-label="Подборки">
+        <a href="fribety.html"><b>Все акции</b><span data-count="all"></span></a>
+        <a href="bonusy-novym.html"><b>Новым игрокам</b><span data-count="new"></span></a>
+        <a href="fribety-deystvuyushchim.html"><b>Действующим игрокам</b><span data-count="current"></span></a>
+        <a href="bez-depozita.html"><b>Без депозита</b><span data-count="nodep"></span></a>
+        <a href="keshbek.html" aria-current="page"><b>Кешбэк и страховки</b><span data-count="cashback"></span></a>
+      </nav>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap prose">
+      <h2>Кешбэк и страховка — в чём разница</h2>
+      <p><b>Кешбэк</b> — возврат процента от проигранных ставок за период, деньгами или фрибетом. <b>Страховка</b> — возврат конкретной ставки при определённом исходе: например, если в экспрессе не сыграло одно событие.</p>
+      <p>Проверяйте, чем именно возвращают — деньгами, которые можно вывести, или фрибетом, который нужно поставить.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <a class="logo" href="index.html">Fin<span>Search</span></a>
+      <p><strong>18+. Азартные игры могут вызывать зависимость.</strong> Не ставьте деньги, которые не готовы потерять.</p>
+      <p>FinSearch — информационный сайт, не организатор азартных игр и не принимает ставки. Ссылки на букмекеров являются рекламой.</p>
+      <p class="num">© 2026 FinSearch</p>
+    </div>
+    <nav aria-label="Бонусы">
+      <b>Бонусы</b>
+      <a href="fribety.html">Все акции</a>
+      <a href="bonusy-novym.html">Новым игрокам</a>
+      <a href="fribety-deystvuyushchim.html">Действующим игрокам</a>
+      <a href="bez-depozita.html">Без депозита</a>
+      <a href="keshbek.html">Кешбэк и страховки</a>
+    </nav>
+    <nav aria-label="Букмекеры">
+      <b>Букмекеры</b>
+      <a href="bk-fonbet.html">Fonbet</a>
+      <a href="bk-winline.html">Winline</a>
+      <a href="bk-leon.html">Leon</a>
+      <a href="bk-betboom.html">BetBoom</a>
+      <a href="bk-pari.html">PARI</a>
+      <a href="bk-ligastavok.html">Лига Ставок</a>
+      <a href="bukmekery.html">Все букмекеры</a>
+    </nav>
+    <nav aria-label="Ставки на спорт">
+      <b>Ставки на спорт</b>
+      <a href="stavki-futbol.html">Футбол</a>
+      <a href="stavki-hokkey.html">Хоккей</a>
+      <a href="stavki-tennis.html">Теннис</a>
+      <a href="stavki-basketbol.html">Баскетбол</a>
+      <a href="stavki-kibersport.html">Киберспорт</a>
+      <a href="stavki-mma.html">Единоборства</a>
+    </nav>
+    <nav aria-label="Материалы">
+      <b>Материалы</b>
+      <a href="prognozy.html">Прогнозы</a>
+      <a href="novosti.html">Новости</a>
+      <a href="koefficient.html">Что на самом деле означает коэффициент</a>
+      <a href="legalnost.html">Как проверить</a>
+      <a href="otvetstvenno.html">Лимиты</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="promos.js"></script>
+<script src="catalog.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Что означает коэффициент и как посчитать маржу букмекера — FinSearch</title>
+<meta name="description" content="Коэффициент — это вероятность плюс комиссия букмекера. Разбираем формулы на примере реального расклада и считаем, сколько игрок теряет на марже.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&family=JetBrains+Mono&family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="index.html">Fin<span>Search</span></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="fribety.html">Бонусы</a>
+      <a href="prognozy.html">Прогнозы</a>
+      <a href="novosti.html">Новости</a>
+      <a href="bukmekery.html">Букмекеры</a>
+      <a href="sport.html">Ставки на спорт</a>
+      <a href="stati.html" aria-current="page">Статьи</a>
+    </nav>
+    <span class="age" title="Только для совершеннолетних">18+</span>
+  </div>
+</header>
+
+<main class="article">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">FinSearch</a> / <a href="stati.html">Статьи</a> / математика</p>
+    <h1>Что на самом деле означает коэффициент</h1>
+    <p class="lead">Коэффициент — это не «сколько дадут». Это оценка вероятности исхода, в которую букмекер вшил свою комиссию. Если научиться её видеть, разные конторы и разные линии начинают сравниваться за секунды.</p>
+
+    <h2>Кэф → вероятность</h2>
+    <p>Десятичный коэффициент переводится в вероятность одной формулой:</p>
+    <div class="formula">вероятность = 1 / кэф<br>1 / <b>2.50</b> = 0,40 → 40%</div>
+    <p>Кэф 2.50 означает, что, по мнению букмекера, исход случится примерно в 40% случаев (на самом деле чуть реже, об этом ниже). Кэф 1.25 — 80%, кэф 5.00 — 20%.</p>
+
+    <h2>Почему вероятности не складываются в 100%</h2>
+    <p>Возьмём футбольный матч с тремя исходами:</p>
+    <table>
+      <thead><tr><th>Исход</th><th class="num">Кэф</th><th class="num">1 / кэф</th></tr></thead>
+      <tbody>
+        <tr><td>Победа хозяев</td><td class="num"><span class="num">1.90</span></td><td class="num"><span class="num">52,6%</span></td></tr>
+        <tr><td>Ничья</td><td class="num"><span class="num">3.60</span></td><td class="num"><span class="num">27,8%</span></td></tr>
+        <tr><td>Победа гостей</td><td class="num"><span class="num">4.20</span></td><td class="num"><span class="num">23,8%</span></td></tr>
+        <tr><td><b>Сумма</b></td><td></td><td class="num"><span class="num">104,2%</span></td></tr>
+      </tbody>
+    </table>
+    <p>Исходов три, и один из них точно случится, поэтому честная сумма — 100%. Лишние 4,2% и есть <b>маржа</b>: комиссия букмекера, которая встроена в каждый коэффициент.</p>
+    <div class="formula">маржа = (1/к₁ + 1/к₂ + 1/к₃) − 1<br>0,526 + 0,278 + 0,238 − 1 = <b>0,042 → 4,2%</b></div>
+
+    <h2>Какими были бы честные коэффициенты</h2>
+    <p>Чтобы убрать маржу, каждый кэф умножают на сумму вероятностей:</p>
+    <div class="formula">1.90 × 1,042 = <b>1.98</b><br>3.60 × 1,042 = <b>3.75</b><br>4.20 × 1,042 = <b>4.38</b></div>
+    <p>То есть на победу хозяев игрок получает 1.90 вместо 1.98. Разница выглядит мелкой, но она есть в каждой ставке.</p>
+
+    <h2>Почему «2.00 на равный матч» не бывает</h2>
+    <p>Если две команды равны, честный кэф на каждую — 2.00. В линии вы увидите 1.90 / 1.90 или около того. Считаем маржу: 1/1.90 + 1/1.90 − 1 = 5,3%.</p>
+    <p>Сколько это в деньгах: 100 ставок по 1 000 ₽ на исходы с реальной вероятностью 50% и кэфом 1.90 в среднем дают 50 выигрышей по 900 ₽ прибыли и 50 проигрышей по 1 000 ₽.</p>
+    <div class="formula">50 × 900 − 50 × 1 000 = <b>−5 000 ₽</b> на 100 000 ₽ оборота</div>
+    <p>Это ожидаемый результат игрока, который угадывает «как монетка». Чтобы выйти в плюс, нужно угадывать заметно лучше, чем закладывает букмекер, и делать это стабильно.</p>
+
+    <h2>Что с этим делать на практике</h2>
+    <ul>
+      <li>Сравнивайте маржу на одном и том же матче в разных конторах: на популярный футбол она обычно ниже, на экзотические рынки выше.</li>
+      <li>Экспрессы умножают не только кэфы, но и маржу: в экспрессе из пяти событий с маржой 5% на каждом игрок в среднем возвращает около 78% поставленного, то есть теряет примерно 22%.</li>
+      <li>Если кажется, что кэф «явно завышен», проверьте сумму вероятностей по всем исходам. Чаще всего дело в марже, а не в ошибке букмекера.</li>
+    </ul>
+
+    <p class="next">Дальше: <a href="legalnost.html">как проверить, что букмекер легальный</a></p>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <a class="logo" href="index.html">Fin<span>Search</span></a>
+      <p><strong>18+. Азартные игры могут вызывать зависимость.</strong> Не ставьте деньги, которые не готовы потерять.</p>
+      <p>FinSearch — информационный сайт, не организатор азартных игр и не принимает ставки. Ссылки на букмекеров являются рекламой.</p>
+      <p class="num">© 2026 FinSearch</p>
+    </div>
+    <nav aria-label="Бонусы">
+      <b>Бонусы</b>
+      <a href="fribety.html">Все акции</a>
+      <a href="bonusy-novym.html">Новым игрокам</a>
+      <a href="fribety-deystvuyushchim.html">Действующим игрокам</a>
+      <a href="bez-depozita.html">Без депозита</a>
+      <a href="keshbek.html">Кешбэк и страховки</a>
+    </nav>
+    <nav aria-label="Букмекеры">
+      <b>Букмекеры</b>
+      <a href="bk-fonbet.html">Fonbet</a>
+      <a href="bk-winline.html">Winline</a>
+      <a href="bk-leon.html">Leon</a>
+      <a href="bk-betboom.html">BetBoom</a>
+      <a href="bk-pari.html">PARI</a>
+      <a href="bk-ligastavok.html">Лига Ставок</a>
+      <a href="bukmekery.html">Все букмекеры</a>
+    </nav>
+    <nav aria-label="Ставки на спорт">
+      <b>Ставки на спорт</b>
+      <a href="stavki-futbol.html">Футбол</a>
+      <a href="stavki-hokkey.html">Хоккей</a>
+      <a href="stavki-tennis.html">Теннис</a>
+      <a href="stavki-basketbol.html">Баскетбол</a>
+      <a href="stavki-kibersport.html">Киберспорт</a>
+      <a href="stavki-mma.html">Единоборства</a>
+    </nav>
+    <nav aria-label="Материалы">
+      <b>Материалы</b>
+      <a href="prognozy.html">Прогнозы</a>
+      <a href="novosti.html">Новости</a>
+      <a href="koefficient.html">Что на самом деле означает коэффициент</a>
+      <a href="legalnost.html">Как проверить</a>
+      <a href="otvetstvenno.html">Лимиты</a>
+    </nav>
+  </div>
+</footer>
+
+
+</body>
+</html>

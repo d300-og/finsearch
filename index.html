@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FinSearch — бонусы и фрибеты легальных букмекеров</title>
+<meta name="description" content="Действующие фрибеты и бонусы легальных букмекеров для новых и действующих игроков, матч дня и разборы ставок по видам спорта.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&family=JetBrains+Mono&family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="index.html">Fin<span>Search</span></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="fribety.html">Бонусы</a>
+      <a href="prognozy.html">Прогнозы</a>
+      <a href="novosti.html">Новости</a>
+      <a href="bukmekery.html">Букмекеры</a>
+      <a href="sport.html">Ставки на спорт</a>
+      <a href="stati.html">Статьи</a>
+    </nav>
+    <span class="age" title="Только для совершеннолетних">18+</span>
+  </div>
+</header>
+
+<main>
+  <div class="page-head has-match home-head">
+    <div class="wrap">
+      <div>
+        <h1>Бонусы и фрибеты <b>легальных букмекеров</b></h1>
+        <p class="sub">Сейчас действует <b data-count="all"></b> у 12 букмекеров · только конторы с российской лицензией</p>
+        <form class="search" role="search" action="fribety.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+          <label for="hq" class="sr">Поиск акций</label>
+          <input id="hq" name="q" type="search" placeholder="Winline, без депозита, экспресс…" autocomplete="off">
+        </form>
+      </div>
+      <aside class="match" id="match" aria-label="Матч дня"></aside>
+    </div>
+  </div>
+
+  <section class="block first">
+    <div class="wrap">
+      <nav class="sets" aria-label="Подборки">
+        <a href="fribety.html"><b>Все акции</b><span data-count="all"></span></a>
+        <a href="bonusy-novym.html"><b>Новым игрокам</b><span data-count="new"></span></a>
+        <a href="fribety-deystvuyushchim.html"><b>Действующим игрокам</b><span data-count="current"></span></a>
+        <a href="bez-depozita.html"><b>Без депозита</b><span data-count="nodep"></span></a>
+        <a href="keshbek.html"><b>Кешбэк и страховки</b><span data-count="cashback"></span></a>
+      </nav>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-top"><h2>Прогнозы на матчи</h2><a href="prognozy.html">Все прогнозы</a></div>
+      <div class="pg-grid">
+        <a class="pg" href="prognoz-dinamo-m-avangard-2026-10-26.html">
+          <span class="pg-meta">Хоккей · КХЛ</span>
+          <span class="pg-teams">Динамо М <i>—</i> Авангард</span>
+          <span class="pg-when"><span class="num">26 октября, 19:30 МСК</span> <span class="st" data-start="2026-10-26T19:30:00+03:00" data-result=""></span></span>
+          <span class="pg-pick"><small>Наш прогноз</small>Тотал меньше 5.5</span>
+        </a>
+        <a class="pg" href="prognoz-traktor-sibir-2026-10-26.html">
+          <span class="pg-meta">Хоккей · КХЛ</span>
+          <span class="pg-teams">Трактор <i>—</i> Сибирь</span>
+          <span class="pg-when"><span class="num">26 октября, 17:00 МСК</span> <span class="st" data-start="2026-10-26T17:00:00+03:00" data-result=""></span></span>
+          <span class="pg-pick"><small>Наш прогноз</small>Победа «Трактора» с учётом овертайма</span>
+        </a>
+        <a class="pg" href="prognoz-avtomobilist-barys-2026-10-26.html">
+          <span class="pg-meta">Хоккей · КХЛ</span>
+          <span class="pg-teams">Автомобилист <i>—</i> Барыс</span>
+          <span class="pg-when"><span class="num">26 октября, 17:00 МСК</span> <span class="st" data-start="2026-10-26T17:00:00+03:00" data-result=""></span></span>
+          <span class="pg-pick"><small>Наш прогноз</small>«Автомобилист» не проиграет в основное время (1X)</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-top"><h2>Лучшие бонусы новым игрокам</h2><a href="bonusy-novym.html">Все бонусы новым</a></div>
+      <div class="promos" data-list="new" data-limit="4"></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-top"><h2>Скоро закончатся</h2><a href="fribety.html">Все акции</a></div>
+      <div class="promos" data-list="soon" data-limit="3"></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-top"><h2>Букмекеры</h2><a href="bukmekery.html">Все букмекеры</a></div>
+      <div class="bk-grid">
+        <a href="bk-fonbet.html"><b>Fonbet</b><span class="num">fonbet.ru</span><em data-bklink="Fonbet"></em></a>
+        <a href="bk-winline.html"><b>Winline</b><span class="num">winline.ru</span><em data-bklink="Winline"></em></a>
+        <a href="bk-leon.html"><b>Leon</b><span class="num">leon.ru</span><em data-bklink="Leon"></em></a>
+        <a href="bk-betboom.html"><b>BetBoom</b><span class="num">betboom.ru</span><em data-bklink="BetBoom"></em></a>
+        <a href="bk-pari.html"><b>PARI</b><span class="num">pari.ru</span><em data-bklink="PARI"></em></a>
+        <a href="bk-ligastavok.html"><b>Лига Ставок</b><span class="num">ligastavok.ru</span><em data-bklink="Лига Ставок"></em></a>
+        <a href="bk-marathonbet.html"><b>Marathonbet</b><span class="num">marathonbet.ru</span><em data-bklink="Marathonbet"></em></a>
+        <a href="bk-olimpbet.html"><b>Olimpbet</b><span class="num">olimp.bet</span><em data-bklink="Olimpbet"></em></a>
+        <a href="bk-melbet.html"><b>Melbet</b><span class="num">melbet.ru</span><em data-bklink="Melbet"></em></a>
+        <a href="bk-zenit.html"><b>Zenit</b><span class="num">zenit.win</span><em data-bklink="Zenit"></em></a>
+        <a href="bk-betcity.html"><b>Betcity</b><span class="num">betcity.ru</span><em data-bklink="Betcity"></em></a>
+        <a href="bk-bettery.html"><b>Bettery</b><span class="num">bettery.ru</span><em data-bklink="Bettery"></em></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-top"><h2>Ставки на спорт</h2><a href="sport.html">Все разборы</a></div>
+      <div class="guides with-img">
+        <a href="stavki-futbol.html">
+          <img src="img/football.svg" alt="" width="640" height="360" loading="lazy">
+          <span class="meta">Футбол</span>
+          <h3>Ставки на футбол</h3>
+          <p>Как устроены основные рынки в футболе — исход, двойной шанс, тоталы, «обе забьют», форы — и что проверить перед ставкой.</p>
+        </a>
+        <a href="stavki-hokkey.html">
+          <img src="img/hockey.svg" alt="" width="640" height="360" loading="lazy">
+          <span class="meta">Хоккей</span>
+          <h3>Ставки на хоккей</h3>
+          <p>Главная ловушка в хоккее — разница между исходом в основное время и с учётом овертайма. Разбираем рынки КХЛ и НХЛ.</p>
+        </a>
+        <a href="stavki-tennis.html">
+          <img src="img/tennis.svg" alt="" width="640" height="360" loading="lazy">
+          <span class="meta">Теннис</span>
+          <h3>Ставки на теннис</h3>
+          <p>Двухисходный вид спорта с большим числом матчей. Разбираем рынки, влияние покрытия и что будет со ставкой, если теннисист снимется.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <h2>Как получить бонус</h2>
+      <ol class="steps">
+        <li><b>Перейдите к букмекеру</b><span>По кнопке «Забрать» в карточке акции. Так акция привяжется к вашему аккаунту.</span></li>
+        <li><b>Зарегистрируйтесь</b><span>Телефон, почта, пароль. Действующим игрокам достаточно войти в свой аккаунт.</span></li>
+        <li><b>Подтвердите личность</b><span>Паспорт или Госуслуги. Без этого бонус не начислят и выигрыш не выведут.</span></li>
+        <li><b>Выполните условие</b><span>Депозит, ставка или экспресс — что требует акция. Бонус придёт в раздел бонусов.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-top"><h2>Новости</h2><a href="novosti.html">Все новости</a></div>
+      <div class="news">
+        <article class="news-item">
+          <p class="news-meta"><time datetime="2026-10-26">26 октября</time> · <span class="tag">Хоккей</span></p>
+          <h3><a href="prognozy.html">КХЛ в понедельник: три матча, главный — «Динамо» против «Авангарда»</a></h3>
+          <p>В 17:00 по Москве стартуют «Трактор» — «Сибирь» и «Автомобилист» — «Барыс», в 19:30 на ВТБ Арене «Динамо» принимает «Авангард». Наши разборы всех трёх матчей — в разделе прогнозов.</p>
+        </article>
+        <article class="news-item">
+          <p class="news-meta"><time datetime="2026-10-26">26 октября</time> · <span class="tag">Фрибеты</span></p>
+          <h3><a href="bk-zenit.html">Zenit: до конца ежедневных заданий осталось 5 дней</a></h3>
+          <p>Акция с наградами до 30 000 ₽ за задания в приложении заканчивается 31 октября. Награды открываются по ступеням, всего до 75 заданий.</p>
+        </article>
+        <article class="news-item">
+          <p class="news-meta"><time datetime="2026-10-26">26 октября</time> · <span class="tag">Фрибеты</span></p>
+          <h3><a href="bk-leon.html">Leon: турнир «Парад чемпионов» заканчивается 1 ноября</a></h3>
+          <p>Очки дают выигранные одинары с кэфом от 1.40 и ставкой от 1 500 ₽. Призовой фонд — 2 000 000 ₽, главный приз — до 1 000 000 ₽.</p>
+        </article>
+        <article class="news-item">
+          <p class="news-meta"><time datetime="2026-10-26">26 октября</time> · <span class="tag">Хоккей</span></p>
+          <h3><a href="https://sovsport.ru/hockey/news/dva-hokkeista-sochi-voshli-v-spisok-luchshih-igrokov-nedeli-khl-sezona-2026-2027" target="_blank" rel="noopener">Два игрока «Сочи» попали в список лучших игроков недели КХЛ</a></h3>
+          <p>Лига опубликовала символическую сборную недели сезона-2026/27 — в неё вошли сразу два хоккеиста «Сочи». <span class="src">Источник ↗</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-top"><h2>Статьи</h2><a href="stati.html">Все статьи</a></div>
+      <div class="guides">
+        <a href="koefficient.html">
+          <span class="meta">6 мин</span>
+          <h3>Что на самом деле означает коэффициент</h3>
+          <p>Как из кэфа получить вероятность и посчитать маржу букмекера.</p>
+        </a>
+        <a href="legalnost.html">
+          <span class="meta">5 мин</span>
+          <h3>Как проверить, что букмекер легальный</h3>
+          <p>Реестр ФНС, паспорт, налоги с выигрыша.</p>
+        </a>
+        <a href="otvetstvenno.html">
+          <span class="meta">4 мин</span>
+          <h3>Лимиты, паузы и когда пора остановиться</h3>
+          <p>Инструменты самоограничения у легальных БК.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block faq">
+    <div class="wrap">
+      <h2>Вопросы</h2>
+      <details>
+        <summary>FinSearch выдаёт бонусы сам?</summary>
+        <p>Нет. Бонусы начисляет букмекер. Мы собираем действующие акции легальных контор на одном сайте.</p>
+      </details>
+      <details>
+        <summary>Можно получить фрибет, если я уже играю у букмекера?</summary>
+        <p>Да. Для вас — <a href="fribety-deystvuyushchim.html">подборка для действующих игроков</a>: фрибеты за экспрессы, турниры, кешбэк.</p>
+      </details>
+      <details>
+        <summary>Почему фрибет не начислился?</summary>
+        <p>Чаще всего не пройдена идентификация, ставка сделана с кэфом ниже минимального или акцию не активировали в личном кабинете. Если всё выполнено, напишите в поддержку букмекера.</p>
+      </details>
+      <details>
+        <summary>Можно ли вывести фрибет деньгами?</summary>
+        <p>Сам фрибет — нет, только поставить. Выигрыш с него выводится как обычные деньги, иногда после отыгрыша.</p>
+      </details>
+      <details>
+        <summary>Нужно ли платить налог с выигрыша по фрибету?</summary>
+        <p>Да, это обычный выигрыш, НДФЛ 13%. С крупных выплат букмекер удерживает налог сам. Подробнее — в <a href="legalnost.html">статье про легальность</a>.</p>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <a class="logo" href="index.html">Fin<span>Search</span></a>
+      <p><strong>18+. Азартные игры могут вызывать зависимость.</strong> Не ставьте деньги, которые не готовы потерять.</p>
+      <p>FinSearch — информационный сайт, не организатор азартных игр и не принимает ставки. Ссылки на букмекеров являются рекламой.</p>
+      <p class="num">© 2026 FinSearch</p>
+    </div>
+    <nav aria-label="Бонусы">
+      <b>Бонусы</b>
+      <a href="fribety.html">Все акции</a>
+      <a href="bonusy-novym.html">Новым игрокам</a>
+      <a href="fribety-deystvuyushchim.html">Действующим игрокам</a>
+      <a href="bez-depozita.html">Без депозита</a>
+      <a href="keshbek.html">Кешбэк и страховки</a>
+    </nav>
+    <nav aria-label="Букмекеры">
+      <b>Букмекеры</b>
+      <a href="bk-fonbet.html">Fonbet</a>
+      <a href="bk-winline.html">Winline</a>
+      <a href="bk-leon.html">Leon</a>
+      <a href="bk-betboom.html">BetBoom</a>
+      <a href="bk-pari.html">PARI</a>
+      <a href="bk-ligastavok.html">Лига Ставок</a>
+      <a href="bukmekery.html">Все букмекеры</a>
+    </nav>
+    <nav aria-label="Ставки на спорт">
+      <b>Ставки на спорт</b>
+      <a href="stavki-futbol.html">Футбол</a>
+      <a href="stavki-hokkey.html">Хоккей</a>
+      <a href="stavki-tennis.html">Теннис</a>
+      <a href="stavki-basketbol.html">Баскетбол</a>
+      <a href="stavki-kibersport.html">Киберспорт</a>
+      <a href="stavki-mma.html">Единоборства</a>
+    </nav>
+    <nav aria-label="Материалы">
+      <b>Материалы</b>
+      <a href="prognozy.html">Прогнозы</a>
+      <a href="novosti.html">Новости</a>
+      <a href="koefficient.html">Что на самом деле означает коэффициент</a>
+      <a href="legalnost.html">Как проверить</a>
+      <a href="otvetstvenno.html">Лимиты</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="promos.js"></script>
+<script src="catalog.js"></script>
+<script src="matchday.js"></script>
+<script src="status.js"></script>
+</body>
+</html>
