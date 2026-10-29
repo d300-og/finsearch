@@ -19,7 +19,7 @@
   const bkPage = (name) => { const b = BOOKMAKERS.find((x) => x.name === name); return b ? `bk-${b.slug}.html` : "bukmekery.html"; };
   const isCashback = (p) => /кешб|страхов|возврат/i.test(p.title);
   const bkOf = (p) => BOOKMAKERS.find((x) => x.name === p.bk) || {};
-  const linkOf = (p) => p.link || bkOf(p).aff || "";
+  const linkOf = (p) => p.link || (bkOf(p).aff ? `go/${bkOf(p).slug}/` : "");
   const eridOf = (p) => p.erid || (p.link ? "" : bkOf(p).erid) || "";
 
   const active = PROMOS.filter((p) => daysLeft(p) >= 0);
