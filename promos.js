@@ -8,7 +8,7 @@
 //   until     — последний день акции ГГГГ-ММ-ДД, или "" если срок не известен
 //   noDep     — true, если депозит не нужен
 //   steps     — как получить, по шагам (необязательно)
-//   link      — партнёрская ссылка;  erid — маркировка рекламы;  code — СВОЙ промокод из партнёрки
+//   link      — партнёрская ссылка на конкретную акцию (если пусто — берётся aff букмекера из BOOKMAKERS);  erid — маркировка рекламы;  code — СВОЙ промокод из партнёрки
 //
 // Собрано 26.10.2026 из открытых источников (stavka.tv, bookmaker-ratings.ru).
 // unverified: true — условия не сверены на сайте букмекера. Перед публикацией сверить и снять флаг.
@@ -116,11 +116,11 @@ const PROMOS = [
 
 // Букмекеры: название (как в акциях) → адрес страницы на сайте и официальный домен
 const BOOKMAKERS = [
-  { name: "Fonbet",      slug: "fonbet",      domain: "fonbet.ru" },
+  { name: "Fonbet",      slug: "fonbet",      domain: "fonbet.ru", aff: "https://rko-group.ru/s/sWriyDNE" },
   { name: "Winline",     slug: "winline",     domain: "winline.ru" },
   { name: "Leon",        slug: "leon",        domain: "leon.ru" },
   { name: "BetBoom",     slug: "betboom",     domain: "betboom.ru" },
-  { name: "PARI",        slug: "pari",        domain: "pari.ru" },
+  { name: "PARI",        slug: "pari",        domain: "pari.ru", aff: "https://rko-group.ru/s/qJv5ThE5" },
   { name: "Лига Ставок", slug: "ligastavok",  domain: "ligastavok.ru" },
   { name: "Marathonbet", slug: "marathonbet", domain: "marathonbet.ru" },
   { name: "Olimpbet",    slug: "olimpbet",    domain: "olimp.bet" },

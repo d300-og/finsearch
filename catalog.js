@@ -18,6 +18,7 @@
   const dateRu = (iso) => new Date(iso + "T00:00:00").toLocaleDateString("ru-RU", { day: "numeric", month: "long" });
   const bkPage = (name) => { const b = BOOKMAKERS.find((x) => x.name === name); return b ? `bk-${b.slug}.html` : "bukmekery.html"; };
   const isCashback = (p) => /кешб|страхов|возврат/i.test(p.title);
+  const linkOf = (p) => p.link || (BOOKMAKERS.find((x) => x.name === p.bk) || {}).aff || "";
 
   const active = PROMOS.filter((p) => daysLeft(p) >= 0);
   const ended = PROMOS.filter((p) => daysLeft(p) < 0);
@@ -61,7 +62,7 @@
         </div>
         <div class="stub">
           ${left(p)}
-          <a class="btn" href="${esc(p.link || "#")}" target="_blank" rel="sponsored noopener"${done ? ` aria-disabled="true" tabindex="-1"` : ""}>${done ? "Акция завершена" : "Забрать"}</a>
+          <a class="btn" href="${esc(linkOf(p) || "#")}" target="_blank" rel="sponsored noopener"${done ? ` aria-disabled="true" tabindex="-1"` : ""}>${done ? "Акция завершена" : "Забрать"}</a>
           ${p.erid ? `<p class="ad">Реклама. ${esc(p.bk)}. erid: ${esc(p.erid)}</p>` : ""}
         </div>
       </article>`;
