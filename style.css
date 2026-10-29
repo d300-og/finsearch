@@ -142,7 +142,8 @@ button { font: inherit; color: inherit; }
   .stub::before { left: -11px; }
   .stub::after { right: -11px; clip-path: inset(0 50% 0 0); }
   .stub .btn { flex: 1; }
-  .stub .ad { display: none; }
+  .stub { flex-wrap: wrap; }
+  .stub .ad { flex-basis: 100%; }
 }
 
 .empty { text-align: center; padding: 64px 16px; border: 1px dashed var(--line-strong); border-radius: 8px; }

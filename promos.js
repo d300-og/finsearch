@@ -8,7 +8,7 @@
 //   until     — последний день акции ГГГГ-ММ-ДД, или "" если срок не известен
 //   noDep     — true, если депозит не нужен
 //   steps     — как получить, по шагам (необязательно)
-//   link      — партнёрская ссылка на конкретную акцию (если пусто — берётся aff букмекера из BOOKMAKERS);  erid — маркировка рекламы;  code — СВОЙ промокод из партнёрки
+//   link      — партнёрская ссылка на конкретную акцию (если пусто — берётся aff букмекера из BOOKMAKERS);  erid — маркировка рекламы (если пусто — erid букмекера из BOOKMAKERS);  code — СВОЙ промокод из партнёрки
 //
 // Собрано 26.10.2026 из открытых источников (stavka.tv, bookmaker-ratings.ru).
 // unverified: true — условия не сверены на сайте букмекера. Перед публикацией сверить и снять флаг.
@@ -27,8 +27,8 @@ const PROMOS = [
     noDep: false, until: "2026-12-31", unverified: true },
   { bk: "Olimpbet", who: "new", amount: 15000, pre: "до", title: "Фрибет за регистрацию, минимальная сумма — 500 ₽",
     noDep: false, until: "2026-12-31", unverified: true },
-  { bk: "Winline", who: "new", amount: 10000, pre: "до", title: "Фрибеты за первые депозиты",
-    noDep: false, until: "2026-12-31", unverified: true },
+  { bk: "Winline", who: "new", amount: 10000, pre: "до", title: "10 фрибетов по 1 000 ₽: по одному в день за пополнение в первые 30 дней",
+    noDep: false, until: "2026-12-31" },
   { bk: "Лига Ставок", who: "new", amount: 8000, pre: "до", title: "Фрибеты за депозиты и ставки на спорт",
     noDep: false, until: "2026-12-31", unverified: true },
   { bk: "PARI", who: "new", amount: 5000, pre: "до", title: "Пять фрибетов за депозит и ставки",
@@ -117,7 +117,7 @@ const PROMOS = [
 // Букмекеры: название (как в акциях) → адрес страницы на сайте и официальный домен
 const BOOKMAKERS = [
   { name: "Fonbet",      slug: "fonbet",      domain: "fonbet.ru", aff: "https://rko-group.ru/s/sWriyDNE" },
-  { name: "Winline",     slug: "winline",     domain: "winline.ru" },
+  { name: "Winline",     slug: "winline",     domain: "winline.ru", aff: "https://trk.ppdu.ru/click?uid=138004&oid=2409&erid=2SDnjdDRjvV&siteId=24001", erid: "2SDnjdDRjvV" },
   { name: "Leon",        slug: "leon",        domain: "leon.ru" },
   { name: "BetBoom",     slug: "betboom",     domain: "betboom.ru" },
   { name: "PARI",        slug: "pari",        domain: "pari.ru", aff: "https://rko-group.ru/s/qJv5ThE5" },
