@@ -43,7 +43,8 @@
 
   function card(p) {
     const done = daysLeft(p) < 0;
-    const terms = [["Депозит", p.noDep ? "не нужен" : p.minDep], ["Мин. кэф", p.minOdds], ["Ставка", p.stake], ["Срок отыгрыша", p.wager]]
+    // партнёрские офферы запрещают показывать сумму мин. депозита
+    const terms = [["Депозит", p.noDep ? "не нужен" : (bkOf(p).aff ? "" : p.minDep)], ["Мин. кэф", p.minOdds], ["Ставка", p.stake], ["Срок отыгрыша", p.wager]]
       .filter(([, v]) => v).map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join("");
     const amount = p.amount != null
       ? `<p class="amount num">${p.pre ? `<span class="pre">${esc(p.pre)}</span>` : ""}${money(p.amount)}<span class="cur">${p.unit || "₽"}</span></p>` : "";
@@ -66,6 +67,7 @@
           ${left(p)}
           <a class="btn" href="${esc(linkOf(p) || "#")}" target="_blank" rel="sponsored noopener"${done ? ` aria-disabled="true" tabindex="-1"` : ""}>${done ? "Акция завершена" : "Забрать"}</a>
           ${eridOf(p) ? `<p class="ad">Реклама. ${esc(p.bk)}. erid: ${esc(eridOf(p))}</p>` : ""}
+          ${bkOf(p).age ? `<p class="ad">${esc(bkOf(p).age)}</p>` : ""}
         </div>
       </article>`;
   }
