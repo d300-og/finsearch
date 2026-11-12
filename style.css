@@ -37,7 +37,7 @@ button { font: inherit; color: inherit; }
 .logo { font: 700 19px/1 var(--f-display); text-decoration: none; letter-spacing: -0.02em; }
 .logo span { color: var(--accent); }
 .logo:hover { color: var(--ink); }
-.logo-sport { font: 600 11px/1 var(--f-num); text-transform: uppercase; letter-spacing: 0.08em; vertical-align: 3px; }
+.logo-sport { color: #C42A1F; font: 700 11px/1 var(--f-display); text-transform: uppercase; letter-spacing: 0.06em; vertical-align: baseline; margin-left: 2px; }
 .nav { display: flex; gap: 24px; font-size: 15px; }
 .nav a { text-decoration: none; color: var(--muted); padding: 20px 0; border-bottom: 2px solid transparent; }
 .nav a:hover { color: var(--ink); }
@@ -201,6 +201,7 @@ th.c { text-align: right; }
 .foot .wrap { display: grid; grid-template-columns: 1.6fr repeat(4, 1fr); gap: 32px; }
 .foot .logo { color: var(--surface); display: inline-block; margin-bottom: 16px; }
 .foot .logo span { color: #7FC8A6; }
+.foot .logo-sport { color: #FF7A6B; }
 .foot p { margin: 0 0 12px; max-width: 40em; }
 .foot strong { color: var(--surface); font-weight: 500; }
 .foot nav { display: grid; gap: 8px; align-content: start; }
