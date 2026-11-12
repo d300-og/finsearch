@@ -37,6 +37,7 @@ button { font: inherit; color: inherit; }
 .logo { font: 700 19px/1 var(--f-display); text-decoration: none; letter-spacing: -0.02em; }
 .logo span { color: var(--accent); }
 .logo:hover { color: var(--ink); }
+.logo-sport { font: 600 11px/1 var(--f-num); text-transform: uppercase; letter-spacing: 0.08em; vertical-align: 3px; }
 .nav { display: flex; gap: 24px; font-size: 15px; }
 .nav a { text-decoration: none; color: var(--muted); padding: 20px 0; border-bottom: 2px solid transparent; }
 .nav a:hover { color: var(--ink); }
